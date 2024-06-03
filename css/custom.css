@@ -1,0 +1,10 @@
+.ococon{
+        color: var(--theme-color2);
+    font-size: 70px;
+    line-height: 1;
+    -webkit-transition: all 300ms ease;
+    transition: all 300ms ease;
+}
+.ococon:hover{
+        color: var(--text-color-bg-theme-color1);
+}
