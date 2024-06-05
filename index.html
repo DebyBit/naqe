@@ -20,12 +20,39 @@
 
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
 <script src="js/jquery.js"></script>
 	 <script>
     $(function(){
-      $("#headBrunch").load("_head.html");
-      $("#footBrunch").load("_foot.html");
-      $("#footLink").load("_footlink.html");
+	
+	phasereaveal()
+	
+		function headlead() {
+		  return new Promise((resolve, reject) => {
+			resolve($("#headBrunch").load("_head.html"))
+		  });
+		}
+		async function footlead() {
+		  await headlead()
+		  return new Promise((resolve, reject) => {
+			resolve($("#footBrunch").load("_foot.html"))
+		  });
+		}
+		async function footlinklead() {
+		  await footlead()
+		  return new Promise((resolve, reject) => {
+			resolve($("#footLink").load("_footlink.html"))
+		  });
+		}
+		
+		async function phasereaveal() {
+		  await footlinklead()
+		  return new Promise((resolve, reject) => {
+			setTimeout(() => {
+			resolve( document.querySelector(".preloader").style.display = "none")
+			}, 3000);
+		  });
+		}
     });
   </script>
 </head>
@@ -438,12 +465,12 @@ Furthermore, Naqedat Insurance’s strategic alliances with a variety of busines
 <div class="project-block">
 <div class="inner-box">
 <div class="image-box">
-<figure class="image"><a href="page-project-details.html"><img src="images/resource/project-3.jpg" alt></a>
+<figure class="image"><a href="javascript:;"><img src="images/resource/project-3.jpg" alt></a>
 </figure>
 <div class="info-box">
-<a href="page-project-details.html" class="read-more"><i class="fa fa-long-arrow-alt-right"></i></a>
+<a href="javascript:;" class="read-more"><i class="fa fa-long-arrow-alt-right"></i></a>
 <span class="cat">Life</span>
-<h6 class="title"><a href="page-project-details.html">Life Insurance</a></h6>
+<h6 class="title"><a href="javascript:;">Life Insurance</a></h6>
 </div>
 </div>
 </div>
@@ -452,12 +479,12 @@ Furthermore, Naqedat Insurance’s strategic alliances with a variety of busines
 <div class="project-block">
 <div class="inner-box">
 <div class="image-box">
-<figure class="image"><a href="page-project-details.html"><img src="images/resource/project-1.jpg" alt></a>
+<figure class="image"><a href="javascript:;"><img src="images/resource/project-1.jpg" alt></a>
 </figure>
 <div class="info-box">
-<a href="page-project-details.html" class="read-more"><i class="fa fa-long-arrow-alt-right"></i></a>
+<a href="javascript:;" class="read-more"><i class="fa fa-long-arrow-alt-right"></i></a>
 <span class="cat">Home</span>
-<h6 class="title"><a href="page-project-details.html">Home Insurance</a></h6>
+<h6 class="title"><a href="javascript:;">Home Insurance</a></h6>
 </div>
 </div>
 </div>
@@ -466,12 +493,12 @@ Furthermore, Naqedat Insurance’s strategic alliances with a variety of busines
 <div class="project-block">
 <div class="inner-box">
 <div class="image-box">
-<figure class="image"><a href="page-project-details.html"><img src="images/resource/project-2.jpg" alt></a>
+<figure class="image"><a href="javascript:;"><img src="images/resource/project-2.jpg" alt></a>
 </figure>
 <div class="info-box">
-<a href="page-project-details.html" class="read-more"><i class="fa fa-long-arrow-alt-right"></i></a>
+<a href="javascript:;" class="read-more"><i class="fa fa-long-arrow-alt-right"></i></a>
 <span class="cat">Car</span>
-<h6 class="title"><a href="page-project-details.html">Car Insurance</a></h6>
+<h6 class="title"><a href="javascript:;">Car Insurance</a></h6>
 </div>
 </div>
 </div>
@@ -480,12 +507,12 @@ Furthermore, Naqedat Insurance’s strategic alliances with a variety of busines
 <div class="project-block">
 <div class="inner-box">
 <div class="image-box">
-<figure class="image"><a href="page-project-details.html"><img src="images/resource/project-4.jpg" alt></a>
+<figure class="image"><a href="javascript:;"><img src="images/resource/project-4.jpg" alt></a>
 </figure>
 <div class="info-box">
-<a href="page-project-details.html" class="read-more"><i class="fa fa-long-arrow-alt-right"></i></a>
+<a href="javascript:;" class="read-more"><i class="fa fa-long-arrow-alt-right"></i></a>
 <span class="cat">Job</span>
-<h6 class="title"><a href="page-project-details.html">Job Insurance</a></h6>
+<h6 class="title"><a href="javascript:;">Job Insurance</a></h6>
 </div>
 </div>
 </div>

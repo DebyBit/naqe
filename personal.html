@@ -23,9 +23,35 @@
 <script src="js/jquery.js"></script>
 	 <script>
     $(function(){
-      $("#headBrunch").load("_head.html");
-      $("#footBrunch").load("_foot.html");
-      $("#footLink").load("_footlink2.html");
+	
+	phasereaveal()
+	
+		function headlead() {
+		  return new Promise((resolve, reject) => {
+			resolve($("#headBrunch").load("_head.html"))
+		  });
+		}
+		async function footlead() {
+		  await headlead()
+		  return new Promise((resolve, reject) => {
+			resolve($("#footBrunch").load("_foot.html"))
+		  });
+		}
+		async function footlinklead() {
+		  await footlead()
+		  return new Promise((resolve, reject) => {
+			resolve($("#footLink").load("_footlink2.html"))
+		  });
+		}
+		
+		async function phasereaveal() {
+		  await footlinklead()
+		  return new Promise((resolve, reject) => {
+			setTimeout(() => {
+			resolve( document.querySelector(".preloader").style.display = "none")
+			}, 3000);
+		  });
+		}
     });
   </script>
 <style>
@@ -47,10 +73,10 @@
 <section class="page-title" style="background-image: url(images/background/per-page-title.jpg);">
 <div class="auto-container">
 <div class="title-outer">
-<h1 class="title">Car Insurance</h1>
+<h1 id="pentitle" class="title">Car Insurance</h1>
 <ul class="page-breadcrumb">
 <li><a href="./">Home</a></li>
-<li>Car Insurance</li>
+<li id="pensubstitute">Car Insurance</li>
 </ul>
 </div>
 </div>

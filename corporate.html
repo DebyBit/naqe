@@ -23,9 +23,35 @@
 <script src="js/jquery.js"></script>
 	 <script>
     $(function(){
-      $("#headBrunch").load("_head.html");
-      $("#footBrunch").load("_foot.html");
-      $("#footLink").load("_footlink2.html");
+	
+	phasereaveal()
+	
+		function headlead() {
+		  return new Promise((resolve, reject) => {
+			resolve($("#headBrunch").load("_head.html"))
+		  });
+		}
+		async function footlead() {
+		  await headlead()
+		  return new Promise((resolve, reject) => {
+			resolve($("#footBrunch").load("_foot.html"))
+		  });
+		}
+		async function footlinklead() {
+		  await footlead()
+		  return new Promise((resolve, reject) => {
+			resolve($("#footLink").load("_footlink2.html"))
+		  });
+		}
+		
+		async function phasereaveal() {
+		  await footlinklead()
+		  return new Promise((resolve, reject) => {
+			setTimeout(() => {
+			resolve( document.querySelector(".preloader").style.display = "none")
+			}, 3000);
+		  });
+		}
     });
   </script>
 </head>
@@ -68,45 +94,45 @@ Providing a range of business-focused insurance solutions to safeguard your busi
 <div class="service-block col-lg-4 col-md-6 col-sm-12">
 <div class="inner-box">
 <div class="icon-box"><i class="ococon fa fa-fire"></i></div>
-<h5 class="title"><a href="javascript:;"> Fire & General Accident </a></h5>
+<h5 class="title"><a href="contact.html"> Fire & General Accident </a></h5>
 <div class="text">Comprehensive protection for unexpected events. </div>
-<a href="javascript:;" class="read-more"><i class="fa fa-long-arrow-alt-right"></i></a>
+<a href="contact.html" class="read-more"><i class="fa fa-long-arrow-alt-right"></i></a>
 </div>
 </div>
 
 <div class="service-block col-lg-4 col-md-6 col-sm-12">
 <div class="inner-box">
 <div class="icon-box"><i class="ococon fa fa-tools"></i></div>
-<h5 class="title"><a href="javascript:;">Engineering </a></h5>
+<h5 class="title"><a href="contact.html">Engineering </a></h5>
 <div class="text">Specialized protection for engineering projects.</div>
-<a href="javascript:;" class="read-more"><i class="fa fa-long-arrow-alt-right"></i> </a>
+<a href="contact.html" class="read-more"><i class="fa fa-long-arrow-alt-right"></i> </a>
 </div>
 </div>
 
 <div class="service-block col-lg-4 col-md-6 col-sm-12">
 <div class="inner-box">
 <div class="icon-box"><i class="ococon fa fa-oil-can-drip"></i></div>
-<h5 class="title"><a href="javascript:;">Oil & Energy</a></h5>
+<h5 class="title"><a href="contact.html">Oil & Energy</a></h5>
 <div class="text">Energy sector coverage you need.</div>
-<a href="javascript:;" class="read-more"><i class="fa fa-long-arrow-alt-right"></i> </a>
+<a href="contact.html" class="read-more"><i class="fa fa-long-arrow-alt-right"></i> </a>
 </div>
 </div>
 
 <div class="service-block col-lg-4 col-md-6 col-sm-12">
 <div class="inner-box">
 <div class="icon-box"><i class="ococon fa fa-oil-temp"></i></div>
-<h5 class="title"><a href="javascript:;">Marine & Aviation</a></h5>
+<h5 class="title"><a href="contact.html">Marine & Aviation</a></h5>
 <div class="text">Marine and aviation risk solutions.</div>
-<a href="javascript:;" class="read-more"><i class="fa fa-long-arrow-alt-right"></i> </a>
+<a href="contact.html" class="read-more"><i class="fa fa-long-arrow-alt-right"></i> </a>
 </div>
 </div>
 
 <div class="service-block col-lg-4 col-md-6 col-sm-12">
 <div class="inner-box">
 <div class="icon-box"><i class="ococon fa fa-ship"></i></div>
-<h5 class="title"><a href="javascript:;">Fleet Insurance</a></h5>
+<h5 class="title"><a href="contact.html">Fleet Insurance</a></h5>
 <div class="text">Efficient fleet protection solutions.</div>
-<a href="javascript:;" class="read-more"><i class="fa fa-long-arrow-alt-right"></i> </a>
+<a href="contact.html" class="read-more"><i class="fa fa-long-arrow-alt-right"></i> </a>
 </div>
 </div>
 
