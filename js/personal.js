@@ -14,11 +14,13 @@ ocoindovia.forEach(item => {
 });
 
 document.getElementById("carinsurance").addEventListener("click", function() { 
+	document.getElementById("pentitle").innerHTML = "Car Insurance";
+	document.getElementById("pensubstitute").innerHTML = "Car Insurance";
 	document.getElementById("refreshpaga").innerHTML = `
 <div class="services-details__content">
 <img src="images/resource/car-insurance.jpg" alt />
 <h3 class="mt-4">Car Insurance</h3>
-<p>Motor Insurance made to suit your every need with Al Wathba Insurance. We offer you the selection between Comprehensive & Third-Party Coverage with additional benefits to add extra value to your purchase. We promise you peace of mind when on the road.  </p>
+<p>Motor Insurance made to suit your every need with Naqedat Insurance. We offer you the selection between Comprehensive & Third-Party Coverage with additional benefits to add extra value to your purchase. We promise you peace of mind when on the road.  </p>
 <div class="content mt-40">
 <div class="text">
 <h3>What's Covered</h3>
@@ -42,13 +44,13 @@ document.getElementById("carinsurance").addEventListener("click", function() {
 
 		<p>Extended coverage provides protection against damages to your vehicle for up to 10 years.</p>
 
-		<p><strong>&bull; Oman Cover Extension (Own Damage only)</strong></p>
+		<p><strong>&bull; United Arab Emirates Cover Extension (Own Damage only)</strong></p>
 
-		<p>Travel worry-free with our policy extension, providing coverage for your vehicle in Oman.</p>
+		<p>Travel worry-free with our policy extension, providing coverage for your vehicle in United Arab Emirates.</p>
 
 		<p><strong>&bull; Orange Card cover &ndash; Upon Request:</strong></p>
 
-		<p>Add-on cover available at your request for Third Party damages in Sultanate of Oman.</p>
+		<p>Add-on cover available at your request for Third Party damages in Sultanate of United Arab Emirates.</p>
 
 		<p><strong>&bull; Personal Accident (PA) Cover for Driver and Passengers:</strong></p>
 
@@ -83,6 +85,8 @@ document.getElementById("carinsurance").addEventListener("click", function() {
 });
 
 document.getElementById("projectinsurance").addEventListener("click", function() { 
+	document.getElementById("pentitle").innerHTML = "Project Finance Insurance";
+	document.getElementById("pensubstitute").innerHTML = "Project Finance Insurance";
 	document.getElementById("refreshpaga").innerHTML = `
 <div class="services-details__content">
 <img src="images/resource/financial-project-insurance.jpg" alt />
@@ -109,6 +113,8 @@ The level of non-performing loans is much higher in project finance than in trad
 });
 
 document.getElementById("homeinsurance").addEventListener("click", function() { 
+	document.getElementById("pentitle").innerHTML = "Home Insurance";
+	document.getElementById("pensubstitute").innerHTML = "Home Insurance";
 	document.getElementById("refreshpaga").innerHTML = `
 <div class="services-details__content">
 <img src="images/resource/home-insurance.jpg" alt />
@@ -163,11 +169,13 @@ Home Insurance provides you with the security and peace of mind you need to prot
 });
 
 document.getElementById("yachtinsurance").addEventListener("click", function() { 
+	document.getElementById("pentitle").innerHTML = "Yacht Insurance";
+	document.getElementById("pensubstitute").innerHTML = "Yacht Insurance";
 	document.getElementById("refreshpaga").innerHTML = `
 <div class="services-details__content">
 <img src="images/resource/yacht-Insurance.jpg" alt />
 <h3 class="mt-4">Yacht Insurance</h3>
-<p>Motor Insurance made to suit your every need with Al Wathba Insurance. We offer you the selection between Comprehensive & Third-Party Coverage with additional benefits to add extra value to your purchase. We promise you peace of mind when on the road.  </p>
+<p>Motor Insurance made to suit your every need with Naqedat Insurance. We offer you the selection between Comprehensive & Third-Party Coverage with additional benefits to add extra value to your purchase. We promise you peace of mind when on the road.  </p>
 <div class="content mt-40">
 <div class="text">
 <h3>What's Covered</h3>
@@ -205,12 +213,14 @@ document.getElementById("yachtinsurance").addEventListener("click", function() {
 
 
 document.getElementById("healthinsurance").addEventListener("click", function() { 
+	document.getElementById("pentitle").innerHTML = "Health Insurance";
+	document.getElementById("pensubstitute").innerHTML = "Health Insurance";
 	document.getElementById("refreshpaga").innerHTML = `
 <div class="services-details__content">
 <img src="images/resource/health-insurance.jpg" alt />
 <h3 class="mt-4">What Is Health Insurance?
 </h3>
-<p>Health Insurance Association of America defines health insurance as “coverage that provides for the payments of benefits as a result of sickness or injury” as well as “insurance for losses from accident, medical expense, disability, or accidental death and dismemberment.” It is broken up into two main categories: Fee-for-Service and Managed Cared. Although both plans are not entirely like the other, they both can cover areas such as medical, surgical, and hospital expenses, as well as prescription drug and dental coverage. </p>
+<p>Health Insurance is the "coverage that provides for the payments of benefits as a result of sickness or injury” as well as “insurance for losses from accident, medical expense, disability, or accidental death and dismemberment.” It is broken up into two main categories: Fee-for-Service and Managed Cared. Although both plans are not entirely like the other, they both can cover areas such as medical, surgical, and hospital expenses, as well as prescription drug and dental coverage. </p>
 <div class="content mt-40">
 <div class="text">
 <h3>How Does it Benefit Me?</h3>
